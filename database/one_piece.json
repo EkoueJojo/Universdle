@@ -1,0 +1,67 @@
+[
+	{
+		"fr":
+		{
+			"names": ["Monkey D. Luffy", "Chapeau de paille"],
+			"devilsFruit": ["Paramecia"],
+			"affiliation": "Équipage du chapeau de paille",
+			"origin": "East Blue",
+			"age": 17,
+			"height": 1.72,
+			"bounty": 30000000,
+			"firstSaga": "East Blue"
+		}
+	},
+	{
+		"fr":
+		{
+			"names": ["Roronoa Zoro"],
+			"devilsFruit": [],
+			"affiliation": "Équipage du chapeau de paille",
+			"origin": "East Blue",
+			"age": 19,
+			"height": 1.78,
+			"bounty": 0,
+			"firstSaga": "East Blue"
+		}
+	},
+	{
+		"fr":
+		{
+			"names": ["Nami"],
+			"devilsFruit": [],
+			"affiliation": "Équipage du chapeau de paille",
+			"origin":"East Blue",
+			"age": 18,
+			"height": 1.69,
+			"bounty": 0,
+			"firstSaga": "East Blue"
+		}
+	},
+	{
+		"fr":
+		{
+			"names": ["Usopp"],
+			"devilsFruit": [],
+			"affiliation": "Équipage du chapeau de paille",
+			"origin":"East Blue",
+			"age": 17,
+			"height": 1.74,
+			"bounty": 0,
+			"firstSaga": "East Blue"
+		}
+	},
+	{
+		"fr":
+		{
+			"names": ["Sanji"],
+			"devilsFruit": [],
+			"affiliation": "Équipage du chapeau de paille",
+			"origin":"East Blue",
+			"age": 19,
+			"height": 1.77,
+			"bounty": 0,
+			"firstSaga": "East Blue"
+		}
+	}
+]

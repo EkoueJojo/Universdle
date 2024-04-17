@@ -4,16 +4,11 @@ getUniverseData(universeFileName).then
 (
 	universeData =>
 	{
-		console.log(universeData);
-
-		for (let i = 0; i < 20; i++)
-		{
-			console.log(getAnswerOfTheDay(universeData, i, true).fr.names[0]);
-		}
+		console.log(getAnswerOfTheDay(universeData, 0, true).fr);
 	}
 );
 
-function getAnswerOfTheDay(universeData, day, relative = false, remainingCalls = 50)
+function getAnswerOfTheDay(universeData, day, relative = false, remainingCalls = 20)
 {
 	let date = relative ? new Date() : day;
 
@@ -23,14 +18,14 @@ function getAnswerOfTheDay(universeData, day, relative = false, remainingCalls =
 	}
 
 	let seed = `${date.getUTCFullYear()}-${date.getUTCDate()}-${date.getUTCMonth()}`;
-	console.log(seed);
 
 	rng = new Math.seedrandom(seed);
 	let randomNumber = Math.floor(rng() * universeData.length);
 
 	if (remainingCalls > 0)
 	{
-		let lastDayAnswer = getAnswerOfTheDay(universeData, day - 1 * 1000 * 60 * 60 * 24, false, remainingCalls - 1);
+		date.setDate(date.getDate() - 1);
+		let lastDayAnswer = getAnswerOfTheDay(universeData, date, false, remainingCalls - 1);
 
 		while (universeData[randomNumber] == lastDayAnswer)
 		{

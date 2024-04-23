@@ -1,6 +1,7 @@
 {
 	"metadata":
 	{
+		"universeName": "One Piece",
 		"fieldNames":
 		{
 			"fr":
@@ -65,7 +66,11 @@
 				"age": 19,
 				"height": 1.78,
 				"bounty": 0,
-				"firstSaga": "East Blue"
+				"firstSaga": "East Blue",
+				"hints":
+				{
+					"firstArc": "Romance Dawn"
+				}
 			}
 		},
 		{
@@ -78,7 +83,11 @@
 				"age": 18,
 				"height": 1.69,
 				"bounty": 0,
-				"firstSaga": "East Blue"
+				"firstSaga": "Ville d'Orange",
+				"hints":
+				{
+					"firstArc": "Romance Dawn"
+				}
 			}
 		},
 		{
@@ -91,7 +100,11 @@
 				"age": 17,
 				"height": 1.74,
 				"bounty": 0,
-				"firstSaga": "East Blue"
+				"firstSaga": "East Blue",
+				"hints":
+				{
+					"firstArc": "Village de Sirop"
+				}
 			}
 		},
 		{
@@ -104,7 +117,11 @@
 				"age": 19,
 				"height": 1.77,
 				"bounty": 0,
-				"firstSaga": "East Blue"
+				"firstSaga": "East Blue",
+				"hints":
+				{
+					"firstArc": "Baratie"
+				}
 			}
 		}
 	]

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Universdle</title>
+	<link rel="stylesheet" href="../style/main.css">
+</head>
+
+<body>
+	<header>
+		<h1>Universdle</h1>
+	</header>
+	<main>
+		<h2 id="Title"></h2>
+		<h3>Devinez le personnage d'aujourd'hui !</h3>
+		<input type="text" id="GuessField" name="GuessField" list="GuessFieldList">
+		<datalist id="GuessFieldList"></datalist>
+		<button id="GuessButton" type="button">OK</button>
+		<section id="Guesses"></section>
+	</main>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+	<script src="../scripts/game.js"></script>
+</body>
+
+</html>

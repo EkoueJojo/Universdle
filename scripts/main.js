@@ -1,14 +1,15 @@
 let universeFileName = "one_piece";
+let language = "fr"
 
 getUniverseData(universeFileName).then
 (
 	universeData =>
 	{
-		console.log(getAnswerOfTheDay(universeData, 0, true).fr);
+		console.log(getAnswerOfTheDay(universeData.characters, 0, true)[language]);
 	}
 );
 
-function getAnswerOfTheDay(universeData, day, relative = false, remainingCalls = 20)
+function getAnswerOfTheDay(characters, day, relative = false, remainingCalls = 20)
 {
 	let date = relative ? new Date() : day;
 
@@ -20,20 +21,20 @@ function getAnswerOfTheDay(universeData, day, relative = false, remainingCalls =
 	let seed = `${date.getUTCFullYear()}-${date.getUTCDate()}-${date.getUTCMonth()}`;
 
 	rng = new Math.seedrandom(seed);
-	let randomNumber = Math.floor(rng() * universeData.length);
+	let randomNumber = Math.floor(rng() * characters.length);
 
 	if (remainingCalls > 0)
 	{
 		date.setDate(date.getDate() - 1);
-		let lastDayAnswer = getAnswerOfTheDay(universeData, date, false, remainingCalls - 1);
+		let lastDayAnswer = getAnswerOfTheDay(characters, date, false, remainingCalls - 1);
 
-		while (universeData[randomNumber] == lastDayAnswer)
+		while (characters[randomNumber] == lastDayAnswer)
 		{
-			randomNumber = Math.floor(rng() * universeData.length);
+			randomNumber = Math.floor(rng() * characters.length);
 		}
 	}
 
-	return universeData[randomNumber];
+	return characters[randomNumber];
 }
 
 async function getUniverseData(fileName)

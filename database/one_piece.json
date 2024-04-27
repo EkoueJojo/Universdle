@@ -13,11 +13,7 @@
 				"age": "Âge",
 				"bounty": "Prime",
 				"firstSaga": "Saga d'apparition",
-				"height": "Taille",
-				"hints":
-				{
-					"firstArc": "Arc d'apparition"
-				}
+				"height": "Taille"
 			}
 		},
 		"orders":
@@ -35,6 +31,13 @@
 				"Arlong",
 				"Loguetown"
 			]
+		},
+		"hints":
+		{
+			"fr":
+			{
+				"firstArc": "Arc d'apparition"
+			}
 		}
 	},
 	"characters":
@@ -43,7 +46,7 @@
 			"fr":
 			{
 				"names": ["Monkey D. Luffy", "Chapeau de paille"],
-				"devilsFruit": ["Paramecia"],
+				"devilsFruit": ["Paramecia", "Zoan"],
 				"affiliation": "Équipage du chapeau de paille",
 				"origin": "East Blue",
 				"age": 17,

@@ -1,3 +1,8 @@
+:root
+{
+	color-scheme: light dark;
+}
+
 html, body
 {
 	width: 100%;
@@ -16,6 +21,32 @@ header
 main
 {
 	margin: 30px;
+}
+
+table
+{
+	border-collapse: collapse;
+	margin: auto;
+}
+
+th, td
+{
+	border: solid thin;
+}
+
+.AttemptField
+{
+	background-color: red;
+}
+
+.Partial
+{
+	background-color: orange;
+}
+
+.Correct
+{
+	background-color: limegreen;
 }
 
 #UniverseList

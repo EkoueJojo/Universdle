@@ -25,6 +25,8 @@ main
 
 table
 {
+	width: 100%;
+	table-layout: fixed;
 	border-collapse: collapse;
 	margin: auto;
 }
@@ -37,6 +39,9 @@ th, td
 .AttemptField
 {
 	background-color: red;
+	background-image: url(../images/arrow.svg);
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .Partial

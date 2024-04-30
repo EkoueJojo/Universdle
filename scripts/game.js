@@ -113,6 +113,11 @@ function guess(universeData, answer)
 			attemptValues = attemptFieldValue;
 		}
 
+		if (JSON.stringify(attemptFieldValue) == JSON.stringify(answerFieldValue))
+		{
+			attemptFieldElement.className += " Correct";
+		}
+
 		if (attemptValues.length <= 0)
 		{
 			attemptValues = "×";
@@ -123,11 +128,6 @@ function guess(universeData, answer)
 			let valueParagraph = document.createElement("p");
 			valueParagraph.innerText = value;
 			attemptFieldElement.appendChild(valueParagraph);
-		}
-
-		if (attemptFieldValue == answerFieldValue)
-		{
-			attemptFieldElement.className += " Correct";
 		}
 
 		attemptRow.appendChild(attemptFieldElement);

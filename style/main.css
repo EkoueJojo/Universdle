@@ -39,9 +39,25 @@ th, td
 .AttemptField
 {
 	background-color: red;
-	background-image: url(../images/arrow.svg);
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+.CharacterImage
+{
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+}
+
+.Higher
+{
+	background-image: url(../images/arrowUp.svg);
+}
+
+.Lower
+{
+	background-image: url(../images/arrowDown.svg);
 }
 
 .Partial

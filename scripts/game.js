@@ -18,6 +18,11 @@ async function getUniverseData(fileName)
 	return (await fetch(`../database/${fileName}.json`)).json();
 }
 
+function getDateString(date)
+{
+	return `${date.getUTCFullYear()}-${date.getUTCDate()}-${date.getUTCMonth()}`;
+}
+
 function getAnswerOfTheDay(characters, day, relative = false, remainingCalls = 20)
 {
 	let date = relative ? new Date() : day;
@@ -27,7 +32,7 @@ function getAnswerOfTheDay(characters, day, relative = false, remainingCalls = 2
 		date.setDate(date.getDate() + day);
 	}
 
-	let seed = `${date.getUTCFullYear()}-${date.getUTCDate()}-${date.getUTCMonth()}`;
+	let seed = getDateString(date);
 
 	rng = new Math.seedrandom(seed);
 	let randomNumber = Math.floor(rng() * characters.length);
@@ -88,13 +93,34 @@ function guess(universeData, answer)
 
 		if (fieldNames[i] == "names")
 		{
-			console.log(attempt.names[0], answer.names[0]);
 			attemptFieldValue = attempt.names[0];
 			answerFieldValue = answer.names[0];
+
+			if (attemptFieldValue == answerFieldValue)
+			{
+				localStorage.setItem(getDateString(new Date()), true);
+			}
+		}
+		else if (fieldNames[i] == "imagePath")
+		{
+			let attemptFieldElement = document.createElement("td");
+			attemptFieldElement.className = "AttemptField";
+
+			if (localStorage.getItem(getDateString(new Date())) ?? false)
+			{
+				attemptFieldElement.className += " Correct";
+			}
+
+			let image = document.createElement("img");
+			image.className = "CharacterImage";
+			image.src = `../images/${universeFileName}/${attempt.imagePath}`;
+
+			attemptFieldElement.appendChild(image);
+			attemptRow.appendChild(attemptFieldElement);
+			continue;
 		}
 		else
 		{
-			console.log(attempt[fieldNames[i]], answer[fieldNames[i]]);
 			attemptFieldValue = attempt[fieldNames[i]];
 			answerFieldValue = answer[fieldNames[i]];
 		}
@@ -103,19 +129,61 @@ function guess(universeData, answer)
 		attemptFieldElement.className = "AttemptField";
 
 		let attemptValues;
+		let answerValues;
 
 		if (typeof attemptFieldValue != "object")
 		{
+			if (typeof attemptFieldValue == "number")
+			{
+				if (answerFieldValue > attemptFieldValue)
+				{
+					attemptFieldElement.classList.add("Higher");
+				}
+				else if (answerFieldValue < attemptFieldValue)
+				{
+					attemptFieldElement.classList.add("Lower");
+				}
+			}
+			else if (Object.keys(universeData.metadata.orders).includes(fieldNames[i]))
+			{
+				let order = universeData.metadata.orders[fieldNames[i]];
+				let attemptValueIndex = order.indexOf(attemptFieldValue);
+				let answerValueIndex = order.indexOf(answerFieldValue);
+
+				if (answerValueIndex > attemptValueIndex)
+				{
+					attemptFieldElement.classList.add("Higher");
+				}
+				else if (answerValueIndex < attemptValueIndex)
+				{
+					attemptFieldElement.classList.add("Lower");
+				}
+			}
+
 			attemptValues = [attemptFieldValue];
+			answerValues = [answerFieldValue];
 		}
 		else
 		{
 			attemptValues = attemptFieldValue;
+			answerValues = answerFieldValue;
 		}
 
-		if (JSON.stringify(attemptFieldValue) == JSON.stringify(answerFieldValue))
+		let nbCorrect = 0;
+
+		for (const arrayValue of attemptValues)
+		{
+			if (answerValues.includes(arrayValue))
+				nbCorrect++;
+		}
+
+		if (nbCorrect == attemptValues.length)
 		{
 			attemptFieldElement.className += " Correct";
+		}
+		else if (nbCorrect > 0)
+		{
+			attemptFieldElement.className += " Partial";
 		}
 
 		if (attemptValues.length <= 0)
@@ -134,9 +202,6 @@ function guess(universeData, answer)
 	}
 
 	guessesBody.prepend(attemptRow);
-
-	console.log(attempt);
-	console.log(answer[language]);
 }
 
 function ShowPageContent(universeData)

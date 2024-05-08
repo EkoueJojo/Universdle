@@ -1,6 +1,7 @@
 :root
 {
 	color-scheme: light dark;
+	--searchFieldWidth: 170px;
 }
 
 html, body
@@ -36,6 +37,22 @@ th, td
 	border: solid thin;
 }
 
+.SearchResult
+{
+	height: 2.5em;
+	display: flex;
+}
+
+.SearchResult:hover
+{
+	background-color: #607080;
+}
+
+.SearchResult p
+{
+	margin: auto;
+}
+
 .AttemptField
 {
 	background-color: red;
@@ -45,7 +62,7 @@ th, td
 
 .CharacterImage
 {
-	width: 100%;
+	height: 100%;
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
 }
@@ -79,4 +96,26 @@ th, td
 	height: fit-content;
 	padding: 20px;
 	margin: auto;
+}
+
+#SearchContainer
+{
+	display: inline-block;
+	width: fit-content;
+	margin: auto;
+	position: relative;
+}
+
+#GuessField
+{
+	border-radius: 5px;
+}
+
+#SearchResults
+{
+	width: 100%;
+	position: absolute;
+	background-color: slategray;
+	overflow-y: auto;
+	max-height: min(20vh, 200px);
 }

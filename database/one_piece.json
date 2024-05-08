@@ -9,6 +9,7 @@
 				"names": "Nom",
 				"imagePath": "Photo",
 				"gender": "Genre",
+				"race": "Race",
 				"devilsFruit": "Fruit du démon",
 				"affiliation": "Affiliation",
 				"origin": "Origine",
@@ -47,9 +48,10 @@
 		{
 			"fr":
 			{
-				"names": ["Monkey D. Luffy", "Chapeau de paille"],
+				"names": ["Monkey D. Luffy", "Luffy", "Chapeau de paille"],
 				"imagePath": "luffy.png",
 				"gender": "Masculin",
+				"race": "Humain",
 				"devilsFruit": ["Paramecia"],
 				"affiliation": "Équipage du chapeau de paille",
 				"origin": "East Blue",
@@ -66,9 +68,10 @@
 		{
 			"fr":
 			{
-				"names": ["Roronoa Zoro"],
+				"names": ["Roronoa Zoro", "Zoro", "Le Chasseur de Pirates", "Mr. Bushidô"],
 				"imagePath": "zoro.png",
 				"gender": "Masculin",
+				"race": "Humain",
 				"devilsFruit": [],
 				"affiliation": "Équipage du chapeau de paille",
 				"origin": "East Blue",
@@ -88,6 +91,7 @@
 				"names": ["Nami"],
 				"imagePath": "nami.png",
 				"gender": "Féminin",
+				"race": "Humain",
 				"devilsFruit": [],
 				"affiliation": "Équipage du chapeau de paille",
 				"origin":"East Blue",
@@ -107,6 +111,7 @@
 				"names": ["Usopp"],
 				"imagePath": "usopp.png",
 				"gender": "Masculin",
+				"race": "Humain",
 				"devilsFruit": [],
 				"affiliation": "Équipage du chapeau de paille",
 				"origin":"East Blue",
@@ -123,9 +128,10 @@
 		{
 			"fr":
 			{
-				"names": ["Sanji"],
+				"names": ["Sanji", "Mr. Prince"],
 				"imagePath": "sanji.png",
 				"gender": "Masculin",
+				"race": "Humain",
 				"devilsFruit": [],
 				"affiliation": "Équipage du chapeau de paille",
 				"origin":"East Blue",

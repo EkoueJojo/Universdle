@@ -8,6 +8,48 @@ getUniverseData(universeFileName).then
 		ShowPageContent(universeData);
 		retrieveCharacters(universeData);
 
+		document.getElementById("GuessField").addEventListener
+		(
+			"keyup",
+			function ()
+			{
+				let fieldElement = document.getElementById("GuessField");
+				let resultsContainer = document.getElementById("SearchResults");
+				resultsContainer.innerHTML = "";
+
+				for (let character of universeData.characters)
+				{
+					let showCharacter = false;
+
+					for (let name of character[language].names)
+					{
+						if (fieldElement.value.trim() != "" && name.toLowerCase().startsWith(fieldElement.value))
+						{
+							showCharacter = true;
+							break;
+						}
+					}
+
+					if (showCharacter)
+					{
+						let resultContainer = document.createElement("div");
+						resultContainer.className = "SearchResult";
+
+						let imageElement = document.createElement("img");
+						imageElement.className = "CharacterImage";
+						imageElement.src = getCharacterImage(universeFileName, character[language].imagePath);
+
+						let nameElement = document.createElement("p");
+						nameElement.innerText = character[language].names[0];
+
+						resultContainer.appendChild(imageElement);
+						resultContainer.appendChild(nameElement);
+						resultsContainer.appendChild(resultContainer);
+					}
+				}
+			}
+		);
+
 		let answer = getAnswerOfTheDay(universeData.characters, 0, true);
 		document.getElementById("GuessButton").addEventListener("click", function () { guess(universeData, answer[language]); });
 	}
@@ -21,6 +63,11 @@ async function getUniverseData(fileName)
 function getDateString(date)
 {
 	return `${date.getUTCFullYear()}-${date.getUTCDate()}-${date.getUTCMonth()}`;
+}
+
+function getCharacterImage(universeFileName, imagePath)
+{
+	return `../images/${universeFileName}/${imagePath}`;
 }
 
 function getAnswerOfTheDay(characters, day, relative = false, remainingCalls = 20)
@@ -113,7 +160,7 @@ function guess(universeData, answer)
 
 			let image = document.createElement("img");
 			image.className = "CharacterImage";
-			image.src = `../images/${universeFileName}/${attempt.imagePath}`;
+			image.src = getCharacterImage(universeFileName, attempt.imagePath);
 
 			attemptFieldElement.appendChild(image);
 			attemptRow.appendChild(attemptFieldElement);

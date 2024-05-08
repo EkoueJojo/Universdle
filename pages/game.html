@@ -15,8 +15,10 @@
 	<main>
 		<h2 id="Title"></h2>
 		<h3>Devinez le personnage d'aujourd'hui !</h3>
-		<input type="text" id="GuessField" name="GuessField" list="GuessFieldList">
-		<datalist id="GuessFieldList"></datalist>
+		<div id="SearchContainer">
+			<input type="search" id="GuessField" name="GuessField">
+			<div id="SearchResults"></div>
+		</div>
 		<button id="GuessButton" type="button">OK</button>
 		<table id="Guesses">
 			<thead id="GuessesHead"></thead>

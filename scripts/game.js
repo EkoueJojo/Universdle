@@ -19,32 +19,25 @@ getUniverseData(universeFileName).then
 
 				for (let character of universeData.characters)
 				{
-					let showCharacter = false;
-
 					for (let name of character[language].names)
 					{
 						if (fieldElement.value.trim() != "" && name.toLowerCase().startsWith(fieldElement.value))
 						{
-							showCharacter = true;
+							let resultContainer = document.createElement("div");
+							resultContainer.className = "SearchResult";
+	
+							let imageElement = document.createElement("img");
+							imageElement.className = "CharacterImage";
+							imageElement.src = getCharacterImage(universeFileName, character[language].imagePath);
+	
+							let nameElement = document.createElement("p");
+							nameElement.innerText = character[language].names[0];
+	
+							resultContainer.appendChild(imageElement);
+							resultContainer.appendChild(nameElement);
+							resultsContainer.appendChild(resultContainer);
 							break;
 						}
-					}
-
-					if (showCharacter)
-					{
-						let resultContainer = document.createElement("div");
-						resultContainer.className = "SearchResult";
-
-						let imageElement = document.createElement("img");
-						imageElement.className = "CharacterImage";
-						imageElement.src = getCharacterImage(universeFileName, character[language].imagePath);
-
-						let nameElement = document.createElement("p");
-						nameElement.innerText = character[language].names[0];
-
-						resultContainer.appendChild(imageElement);
-						resultContainer.appendChild(nameElement);
-						resultsContainer.appendChild(resultContainer);
 					}
 				}
 			}

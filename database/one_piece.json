@@ -9,7 +9,7 @@
 				"names": "Nom",
 				"imagePath": "Photo",
 				"gender": "Genre",
-				"race": "Race",
+				"tribe": "Tribu",
 				"devilsFruit": "Fruit du démon",
 				"affiliation": "Affiliation",
 				"origin": "Origine",
@@ -23,7 +23,9 @@
 		{
 			"firstSaga":
 			[
-				"East Blue"
+				"East Blue",
+				"Alabasta",
+				"Île céleste"
 			],
 			"firstArc":
 			[
@@ -32,7 +34,14 @@
 				"Village Sirop",
 				"Baratie",
 				"Arlong",
-				"Loguetown"
+				"Loguetown",
+				"Reverse Mountain",
+				"Whiskey Peak",
+				"Little Garden",
+				"Île de Drum",
+				"Alabasta",
+				"Jaya",
+				"Skypiea"
 			]
 		},
 		"hints":
@@ -51,7 +60,7 @@
 				"names": ["Monkey D. Luffy", "Luffy", "Chapeau de paille"],
 				"imagePath": "luffy.png",
 				"gender": "Masculin",
-				"race": "Humain",
+				"tribe": "Humain",
 				"devilsFruit": ["Paramecia"],
 				"affiliation": "Équipage du chapeau de paille",
 				"origin": "East Blue",
@@ -71,7 +80,7 @@
 				"names": ["Roronoa Zoro", "Zoro", "Le Chasseur de Pirates", "Mr. Bushidô"],
 				"imagePath": "zoro.png",
 				"gender": "Masculin",
-				"race": "Humain",
+				"tribe": "Humain",
 				"devilsFruit": [],
 				"affiliation": "Équipage du chapeau de paille",
 				"origin": "East Blue",
@@ -91,7 +100,7 @@
 				"names": ["Nami"],
 				"imagePath": "nami.png",
 				"gender": "Féminin",
-				"race": "Humain",
+				"tribe": "Humain",
 				"devilsFruit": [],
 				"affiliation": "Équipage du chapeau de paille",
 				"origin":"East Blue",
@@ -111,7 +120,7 @@
 				"names": ["Usopp"],
 				"imagePath": "usopp.png",
 				"gender": "Masculin",
-				"race": "Humain",
+				"tribe": "Humain",
 				"devilsFruit": [],
 				"affiliation": "Équipage du chapeau de paille",
 				"origin":"East Blue",
@@ -131,7 +140,7 @@
 				"names": ["Sanji", "Mr. Prince"],
 				"imagePath": "sanji.png",
 				"gender": "Masculin",
-				"race": "Humain",
+				"tribe": "Humain",
 				"devilsFruit": [],
 				"affiliation": "Équipage du chapeau de paille",
 				"origin":"East Blue",

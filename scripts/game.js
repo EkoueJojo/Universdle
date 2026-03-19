@@ -1,4 +1,6 @@
-let universeFileName = "one_piece";
+const params = new URLSearchParams(window.location.search);
+let universeFileName = params.get('universe');
+console.log(universeFileName);
 let language = "fr";
 
 getUniverseData(universeFileName).then
@@ -6,7 +8,7 @@ getUniverseData(universeFileName).then
 	universeData =>
 	{
 		ShowPageContent(universeData);
-		retrieveCharacters(universeData);
+		//retrieveCharacters(universeData);
 
 		document.getElementById("GuessField").addEventListener
 		(
@@ -153,6 +155,7 @@ function guess(universeData, answer)
 
 			let image = document.createElement("img");
 			image.className = "CharacterImage";
+			image.width = "150";
 			image.src = getCharacterImage(universeFileName, attempt.imagePath);
 
 			attemptFieldElement.appendChild(image);

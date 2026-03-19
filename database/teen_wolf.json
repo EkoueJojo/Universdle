@@ -1,0 +1,74 @@
+{
+	"metadata":
+	{
+		"universeName": "Teen Wolf",
+		"fieldNames":
+		{
+			"fr":
+			{
+				"names": "Nom",
+				"imagePath": "Photo",
+				"gender": "Genre",
+				"race": "Race",
+				"affiliation": "Affiliation",
+				"age": "Âge",
+				"firstSeason": "Saison d'apparition",
+				"height": "Taille"
+			}
+		},
+		"orders":
+		{
+			"firstSeason":
+			[
+				"Saison 1",
+				"Saison 2",
+				"Saison 3",
+				"Saison 4",
+				"Saison 5",
+				"Saison 6"
+			]
+		}
+	},
+	"characters":
+	[
+		{
+			"fr":
+			{
+				"names": ["Scott", "McCall", "Scott McCall"],
+				"imagePath": "scott.png",
+				"gender": "Masculin",
+				"race": "Loup-garou",
+				"affiliation": "Meute de Scott",
+				"age": 16,
+				"height": 1.78,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Stilinski", "Stiles", "Mieczyslaw", "Stiles Stilinski"],
+				"imagePath": "stiles.png",
+				"gender": "Masculin",
+				"race": "Humain",
+				"affiliation": "Meute de Scott",
+				"age": 16,
+				"height": 1.80,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Lydia", "Martin", "Lydia Martin"],
+				"imagePath": "lydia.png",
+				"gender": "Feminin",
+				"race": "Banshee",
+				"affiliation": "Meute de Scott",
+				"age": 16,
+				"height": 1.60,
+				"firstSeason": "Saison 1"
+			}
+		}
+	]
+}

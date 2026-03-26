@@ -1,6 +1,5 @@
 const params = new URLSearchParams(window.location.search);
 let universeFileName = params.get('universe');
-console.log(universeFileName);
 let language = "fr";
 
 getUniverseData(universeFileName).then
@@ -23,7 +22,7 @@ getUniverseData(universeFileName).then
 				{
 					for (let name of character[language].names)
 					{
-						if (fieldElement.value.trim() != "" && name.toLowerCase().startsWith(fieldElement.value))
+						if (fieldElement.value.trim() != "" && (name.toLowerCase().startsWith(fieldElement.value) || name.toUpperCase().startsWith(fieldElement.value)))
 						{
 							let resultContainer = document.createElement("div");
 							resultContainer.className = "SearchResult";
@@ -38,15 +37,31 @@ getUniverseData(universeFileName).then
 							resultContainer.appendChild(imageElement);
 							resultContainer.appendChild(nameElement);
 							resultsContainer.appendChild(resultContainer);
+							
+							resultContainer.addEventListener("click", function(){ 
+								fieldElement.value = resultContainer.textContent;
+								guess(universeData, answer[language]); 
+								fieldElement.value = "";
+								resultsContainer.innerHTML = "";
+							});
+
+							fieldElement.addEventListener('keydown', function(e){
+								if(e.key === 'Enter'){
+									fieldElement.value = resultsContainer.firstChild.textContent;
+									guess(universeData, answer[language]); 
+									fieldElement.value = "";
+									resultsContainer.innerHTML = "";
+								}
+							});
 							break;
 						}
 					}
 				}
 			}
 		);
-
+		
 		let answer = getAnswerOfTheDay(universeData.characters, 0, true);
-		document.getElementById("GuessButton").addEventListener("click", function () { guess(universeData, answer[language]); });
+		document.getElementById("GuessButton").addEventListener("click", function(){ guess(universeData, answer[language]); });
 	}
 );
 
@@ -102,7 +117,7 @@ async function retrieveCharacters(universeData)
 		let option = document.createElement("option");
 		let characterName = universeData.characters[i][language].names[0];
 		option.innerText = characterName;
-
+		datalistElement.addEventListener("click", guess);
 		datalistElement.appendChild(option);
 	}
 }
@@ -141,6 +156,13 @@ function guess(universeData, answer)
 			if (attemptFieldValue == answerFieldValue)
 			{
 				localStorage.setItem(getDateString(new Date()), true);
+				characterField.readOnly = true;
+				//alert("vous avez trouvé");
+				let victoryField = document.getElementById("Victory");
+				let div = document.createElement("h1");
+				div.id = "victory";
+				div.textContent = "🎉 Vous avez trouvé ! 🎉";
+				victoryField.appendChild(div);
 			}
 		}
 		else if (fieldNames[i] == "imagePath")

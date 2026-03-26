@@ -22,10 +22,13 @@
 			[
 				"Saison 1",
 				"Saison 2",
-				"Saison 3",
+				"Saison 3A",
+				"Saison 3B",
 				"Saison 4",
-				"Saison 5",
-				"Saison 6"
+				"Saison 5A",
+				"Saison 5B",
+				"Saison 6A",
+				"Saison 6B"
 			]
 		}
 	},
@@ -34,11 +37,11 @@
 		{
 			"fr":
 			{
-				"names": ["Scott", "McCall", "Scott McCall"],
+				"names": ["Scott McCall", "Scott", "McCall"],
 				"imagePath": "scott.png",
 				"gender": "Masculin",
 				"race": "Loup-garou",
-				"affiliation": "Meute de Scott",
+				"affiliation": ["Meute de Scott", "Meute de Peter"],
 				"age": 16,
 				"height": 1.78,
 				"firstSeason": "Saison 1"
@@ -47,7 +50,7 @@
 		{
 			"fr":
 			{
-				"names": ["Stilinski", "Stiles", "Mieczyslaw", "Stiles Stilinski"],
+				"names": ["Stiles Stilinski", "Stiles", "Stilinski"],
 				"imagePath": "stiles.png",
 				"gender": "Masculin",
 				"race": "Humain",
@@ -60,7 +63,7 @@
 		{
 			"fr":
 			{
-				"names": ["Lydia", "Martin", "Lydia Martin"],
+				"names": ["Lydia Martin", "Lydia", "Martin"],
 				"imagePath": "lydia.png",
 				"gender": "Feminin",
 				"race": "Banshee",
@@ -68,6 +71,84 @@
 				"age": 16,
 				"height": 1.60,
 				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Derek Hale", "Derek", "Hale"],
+				"imagePath": "derek.png",
+				"gender": "Masculin",
+				"race": "Loup-garou",
+				"affiliation": "Meute de Scott",
+				"age": 22,
+				"height": 1.83,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Allison Argent", "Allison", "Argent"],
+				"imagePath": "allison.png",
+				"gender": "Feminin",
+				"race": "Chasseuse",
+				"affiliation": "Meute de Scott",
+				"age": 17,
+				"height": 1.73,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Liam Dunbar", "Liam", "Dunbar"],
+				"imagePath": "liam.png",
+				"gender": "Masculin",
+				"race": "Loup-garou",
+				"affiliation": "Meute de Scott",
+				"age": 15,
+				"height": 1.68,
+				"firstSeason": "Saison 4"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Malia Tate", "Malia", "Tate"],
+				"imagePath": "lydia.png",
+				"gender": "Feminin",
+				"race": "Banshee",
+				"affiliation": "Meute de Scott",
+				"age": 16,
+				"height": 1.72,
+				"firstSeason": "Saison 3B"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Jackson Whittemore", "Jackson", "Whittemore"],
+				"imagePath": "jackson.png",
+				"gender": "Masculin",
+				"race": "Kanima",
+				"affiliation": "Aucune",
+				"age": 16,
+				"height": 1.75,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Kira Yukimura", "Kira", "Yukimura"],
+				"imagePath": "kira.png",
+				"gender": "Feminin",
+				"race": "Kitsune",
+				"affiliation": "Meute de Scott",
+				"age": 16,
+				"height": 1.63,
+				"firstSeason": "Saison 3B"
 			}
 		}
 	]

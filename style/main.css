@@ -119,3 +119,11 @@ th, td
 	overflow-y: auto;
 	max-height: min(20vh, 200px);
 }
+
+.search{
+	margin-bottom: 1%;
+}
+
+#victory{
+	color: coral;
+}

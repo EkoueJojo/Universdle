@@ -1,6 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 let universeFileName = params.get('universe');
 let language = "fr";
+let attemptCharacter = Array();
 
 getUniverseData(universeFileName).then
 (
@@ -24,44 +25,58 @@ getUniverseData(universeFileName).then
 					{
 						if (fieldElement.value.trim() != "" && (name.toLowerCase().startsWith(fieldElement.value) || name.toUpperCase().startsWith(fieldElement.value)))
 						{
-							let resultContainer = document.createElement("div");
-							resultContainer.className = "SearchResult";
-	
-							let imageElement = document.createElement("img");
-							imageElement.className = "CharacterImage";
-							imageElement.src = getCharacterImage(universeFileName, character[language].imagePath);
-	
-							let nameElement = document.createElement("p");
-							nameElement.innerText = character[language].names[0];
-	
-							resultContainer.appendChild(imageElement);
-							resultContainer.appendChild(nameElement);
-							resultsContainer.appendChild(resultContainer);
-							
-							resultContainer.addEventListener("click", function(){ 
-								fieldElement.value = resultContainer.textContent;
-								guess(universeData, answer[language]); 
-								fieldElement.value = "";
-								resultsContainer.innerHTML = "";
-							});
-
-							fieldElement.addEventListener('keydown', function(e){
-								if(e.key === 'Enter'){
+							if(!attemptCharacter.includes(character[language].names[0])){
+								let resultContainer = document.createElement("div");
+								resultContainer.className = "SearchResult";
+		
+								let imageElement = document.createElement("img");
+								imageElement.className = "CharacterImage";
+								imageElement.src = getCharacterImage(universeFileName, character[language].imagePath);
+		
+								let nameElement = document.createElement("p");
+								nameElement.innerText = character[language].names[0];
+		
+								resultContainer.appendChild(imageElement);
+								resultContainer.appendChild(nameElement);
+								resultsContainer.appendChild(resultContainer);
+								
+								resultContainer.addEventListener("click", function(){ 
 									fieldElement.value = resultsContainer.firstChild.textContent;
+									attemptCharacter.push(resultsContainer.firstChild.textContent);
 									guess(universeData, answer[language]); 
 									fieldElement.value = "";
 									resultsContainer.innerHTML = "";
-								}
-							});
+								});
+
+								
+							}
 							break;
 						}
 					}
 				}
+				fieldElement.addEventListener('keyup', function(e){
+					if(e.key === 'Enter'){
+						if(!attemptCharacter.includes(fieldElement.value.trim())){
+							fieldElement.value = resultsContainer.firstChild.textContent;
+							attemptCharacter.push(fieldElement.value.trim());
+							guess(universeData, answer[language]); 
+							fieldElement.value = "";
+							resultsContainer.innerHTML = "";
+						}
+					}
+				});
+
+				document.getElementById("GuessButton").addEventListener("click", function(){ 
+					if(!attemptCharacter.includes(fieldElement.value.trim())){
+						attemptCharacter.push(fieldElement.value.trim());
+						guess(universeData, answer[language]); 
+						fieldElement.value = "";
+					}
+				});
 			}
 		);
 		
 		let answer = getAnswerOfTheDay(universeData.characters, 0, true);
-		document.getElementById("GuessButton").addEventListener("click", function(){ guess(universeData, answer[language]); });
 	}
 );
 
@@ -161,7 +176,7 @@ function guess(universeData, answer)
 				let victoryField = document.getElementById("Victory");
 				let div = document.createElement("h1");
 				div.id = "victory";
-				div.textContent = "🎉 Vous avez trouvé ! 🎉";
+				div.textContent = "🎉 Vous avez trouvé en " + attemptCharacter.length + " essai(s) ! 🎉";
 				victoryField.appendChild(div);
 			}
 		}
@@ -177,7 +192,6 @@ function guess(universeData, answer)
 
 			let image = document.createElement("img");
 			image.className = "CharacterImage";
-			image.width = "150";
 			image.src = getCharacterImage(universeFileName, attempt.imagePath);
 
 			attemptFieldElement.appendChild(image);
@@ -265,7 +279,6 @@ function guess(universeData, answer)
 
 		attemptRow.appendChild(attemptFieldElement);
 	}
-
 	guessesBody.prepend(attemptRow);
 }
 

@@ -18,6 +18,8 @@ getUniverseData(universeFileName).then
 				let fieldElement = document.getElementById("GuessField");
 				let resultsContainer = document.getElementById("SearchResults");
 				resultsContainer.innerHTML = "";
+				let indexChildren = 0;
+				let children = resultsContainer.children;
 
 				for (let character of universeData.characters)
 				{
@@ -47,22 +49,49 @@ getUniverseData(universeFileName).then
 									fieldElement.value = "";
 									resultsContainer.innerHTML = "";
 								});
-
-								
 							}
 							break;
 						}
 					}
 				}
-				fieldElement.addEventListener('keyup', function(e){
+				fieldElement.addEventListener('keydown', function(e){
+					if(e.key === 'ArrowUp'){
+						e.preventDefault();
+						if(indexChildren > 0){
+							indexChildren--;
+						}
+						else{
+							indexChildren = 0;
+						}
+						children[indexChildren].style.backgroundColor = "#91aac4";
+					}
+					if(e.key === 'ArrowDown'){
+						e.preventDefault();
+						if(indexChildren < resultsContainer.children.length){
+							indexChildren++;
+						}
+						else{
+							indexChildren = children.length - 1;
+						}
+						children[indexChildren].style.backgroundColor = "#91aac4";
+					}
 					if(e.key === 'Enter'){
 						if(!attemptCharacter.includes(fieldElement.value.trim())){
-							fieldElement.value = resultsContainer.firstChild.textContent;
+							fieldElement.value = children[indexChildren].textContent;
 							attemptCharacter.push(fieldElement.value.trim());
 							guess(universeData, answer[language]); 
 							fieldElement.value = "";
 							resultsContainer.innerHTML = "";
 						}
+					}
+				});
+
+				fieldElement.addEventListener('keyup', function(e){
+					if(e.key === 'ArrowUp'){
+						children[indexChildren].style.backgroundColor = "#91aac4";
+					}
+					if(e.key === 'ArrowDown'){
+						children[indexChildren].style.backgroundColor = "#91aac4";
 					}
 				});
 

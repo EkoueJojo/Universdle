@@ -1,0 +1,262 @@
+{
+	"metadata":
+	{
+		"universeName": "Ginny et Georgia",
+		"fieldNames":
+		{
+			"fr":
+			{
+				"names": "Nom",
+				"imagePath": "Photo",
+				"gender": "Genre",
+				"affiliation": "Affiliation",
+				"age": "Âge",
+				"firstSeason": "Saison d'apparition",
+				"height": "Taille"
+			}
+		},
+		"orders":
+		{
+			"firstSeason":
+			[
+				"Saison 1",
+				"Saison 2",
+				"Saison 3"
+			]
+		}
+	},
+	"characters":
+	[
+		{
+			"fr": {
+				"names": ["Georgia Miller"],
+				"imagePath": "georgia.png",
+				"gender": "Femme",
+				"affiliation": ["Famille Miller", "Mairie de Wellsbury", "Famille Randolph"],
+				"age": 30,
+				"height": 1.70,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Virginia Miller", "Ginny"],
+				"imagePath": "ginny.png",
+				"gender": "Femme",
+				"affiliation": ["Famille Miller", "MANG", "Lycée de Wellsbury"],
+				"age": 15,
+				"height": 1.55,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Austin Miller"],
+				"imagePath": "austin.png",
+				"gender": "Homme",
+				"affiliation": ["Famille Miller"],
+				"age": 9,
+				"height": 1.48,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Marcus Baker"],
+				"imagePath": "marcus.png",
+				"gender": "Homme",
+				"affiliation": ["Famille Baker", "Lycée de Wellsbury"],
+				"age": 16,
+				"height": 1.78,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Maxine Baker", "Max"],
+				"imagePath": "maxine.png",
+				"gender": "Femme",
+				"affiliation": ["Famille Baker", "MANG", "Troupe de théâtre", "Lycée de Wellsbury"],
+				"age": 16,
+				"height": 1.65,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Paul Randolph"],
+				"imagePath": "paul.png",
+				"gender": "Homme",
+				"affiliation": ["Mairie de Wellsbury", "Famille Randolph"],
+				"age": 35,
+				"height": 1.83,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Joe Singh"],
+				"imagePath": "joe.png",
+				"gender": "Homme",
+				"affiliation": ["Blue Farm Cafe"],
+				"age": 31,
+				"height": 1.83,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Zion Miller"],
+				"imagePath": "zion.png",
+				"gender": "Homme",
+				"affiliation": ["Famille Miller"],
+				"age": 35,
+				"height": 1.87,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Abigail Littman", "Abby"],
+				"imagePath": "abby.png",
+				"gender": "Femme",
+				"affiliation": ["MANG", "Lycée de Wellsbury"],
+				"age": 16,
+				"height": 1.52,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Norah Cohen"],
+				"imagePath": "norah.png",
+				"gender": "Femme",
+				"affiliation": ["MANG", "Lycée de Wellsbury"],
+				"age": 16,
+				"height": 1.64,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Hunter Chen"],
+				"imagePath": "hunter.png",
+				"gender": "Homme",
+				"affiliation": ["Lycée de Wellsbury", "Groupe de musique"],
+				"age": 16,
+				"height": 1.79,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Gil Timmins"],
+				"imagePath": "gil.png",
+				"gender": "Homme",
+				"affiliation": ["Anciennement Famille Miller"],
+				"age": 39,
+				"height": 1.82,
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Cynthia Fuller"],
+				"imagePath": "cynthia.png",
+				"gender": "Femme",
+				"affiliation": ["Quartier de Wellsbury", "Mairie"],
+				"age": 43,
+				"height": 1.70,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Bracia Charles"],
+				"imagePath": "bracia.png",
+				"gender": "Femme",
+				"affiliation": ["Lycée de Wellsbury", "Troupe de théâtre"],
+				"age": 16,
+				"height": 1.70,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Silver"],
+				"imagePath": "silver.png",
+				"gender": "Femme",
+				"affiliation": ["Troupe de théâtre", "Lycée de Wellsbury"],
+				"age": 16,
+				"height": 1.65,
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Simone"],
+				"imagePath": "simone.png",
+				"gender": "Femme",
+				"affiliation": ["Cabinet d'avocats", "Entourage Zion"],
+				"age": 40,
+				"height": 1.68,
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Gabriel Cordova"],
+				"imagePath": "gabriel.png",
+				"gender": "Homme",
+				"affiliation": ["Enquêteur privé"],
+				"age": 41,
+				"height": 1.80,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Nick Throop"],
+				"imagePath": "nick.png",
+				"gender": "Homme",
+				"affiliation": ["Mairie de Wellsbury"],
+				"age": 31,
+				"height": 1.79,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Ellen Baker"],
+				"imagePath": "ellen.png",
+				"gender": "Femme",
+				"affiliation": ["Famille Baker"],
+				"age": 45,
+				"height": 1.65,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Sophie Sanchez"],
+				"imagePath": "sophie.png",
+				"gender": "Femme",
+				"affiliation": ["Lycée de Wellsbury"],
+				"age": 16,
+				"height": 1.67,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Matt Press"],
+				"imagePath": "nick.png",
+				"gender": "Homme",
+				"affiliation": ["Lycée de Wellsbury"],
+				"age": 16,
+				"height": 1.95,
+				"firstSeason": "Saison 1"
+			}
+		}
+	]
+}

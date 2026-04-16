@@ -37,14 +37,21 @@ getUniverseData(universeFileName).then
 		
 								let nameElement = document.createElement("p");
 								nameElement.innerText = character[language].names[0];
-		
+
+								let surnameElement = document.createElement("p");
+								if(character[language].names.length > 1){
+									surnameElement.innerText = "alias " + character[language].names[1];
+									surnameElement.className = "alias";
+								}
+								
 								resultContainer.appendChild(imageElement);
 								resultContainer.appendChild(nameElement);
+								resultContainer.appendChild(surnameElement);
 								resultsContainer.appendChild(resultContainer);
-								
+
 								resultContainer.addEventListener("click", function(){ 
-									fieldElement.value = resultsContainer.firstChild.textContent;
-									attemptCharacter.push(resultsContainer.firstChild.textContent);
+									fieldElement.value = children[indexChildren].children[1].textContent;
+									attemptCharacter.push(resultsContainer.children[indexChildren].children[1].textContent);
 									guess(universeData, answer[language]); 
 									fieldElement.value = "";
 									resultsContainer.innerHTML = "";
@@ -63,9 +70,7 @@ getUniverseData(universeFileName).then
 						else{
 							indexChildren = 0;
 						}
-						children[indexChildren].style.backgroundColor = "#91aac4";
-					}
-					if(e.key === 'ArrowDown'){
+					} else if(e.key === 'ArrowDown'){
 						e.preventDefault();
 						if(indexChildren < resultsContainer.children.length){
 							indexChildren++;
@@ -73,11 +78,10 @@ getUniverseData(universeFileName).then
 						else{
 							indexChildren = children.length - 1;
 						}
-						children[indexChildren].style.backgroundColor = "#91aac4";
 					}
 					if(e.key === 'Enter'){
 						if(!attemptCharacter.includes(fieldElement.value.trim())){
-							fieldElement.value = children[indexChildren].textContent;
+							fieldElement.value = children[indexChildren].children[1].textContent;
 							attemptCharacter.push(fieldElement.value.trim());
 							guess(universeData, answer[language]); 
 							fieldElement.value = "";

@@ -127,3 +127,7 @@ th, td
 #victory{
 	color: coral;
 }
+
+.alias{
+	font-size: 10px;
+}

@@ -37,7 +37,7 @@
 		{
 			"fr":
 			{
-				"names": ["Scott McCall", "Scott", "McCall"],
+				"names": ["Scott McCall", "L'alpha"],
 				"imagePath": "scott.png",
 				"gender": "Masculin",
 				"race": "Loup-garou",
@@ -50,7 +50,7 @@
 		{
 			"fr":
 			{
-				"names": ["Stiles Stilinski", "Stiles", "Stilinski"],
+				"names": ["Stiles Stilinski"],
 				"imagePath": "stiles.png",
 				"gender": "Masculin",
 				"race": "Humain",
@@ -63,7 +63,7 @@
 		{
 			"fr":
 			{
-				"names": ["Lydia Martin", "Lydia", "Martin"],
+				"names": ["Lydia Martin"],
 				"imagePath": "lydia.png",
 				"gender": "Feminin",
 				"race": "Banshee",
@@ -76,7 +76,7 @@
 		{
 			"fr":
 			{
-				"names": ["Derek Hale", "Derek", "Hale"],
+				"names": ["Derek Hale"],
 				"imagePath": "derek.png",
 				"gender": "Masculin",
 				"race": "Loup-garou",
@@ -89,7 +89,7 @@
 		{
 			"fr":
 			{
-				"names": ["Allison Argent", "Allison", "Argent"],
+				"names": ["Allison Argent"],
 				"imagePath": "allison.png",
 				"gender": "Feminin",
 				"race": "Chasseuse",
@@ -102,7 +102,7 @@
 		{
 			"fr":
 			{
-				"names": ["Liam Dunbar", "Liam", "Dunbar"],
+				"names": ["Liam Dunbar"],
 				"imagePath": "liam.png",
 				"gender": "Masculin",
 				"race": "Loup-garou",
@@ -115,7 +115,7 @@
 		{
 			"fr":
 			{
-				"names": ["Malia Tate", "Malia", "Tate"],
+				"names": ["Malia Tate"],
 				"imagePath": "malia.png",
 				"gender": "Feminin",
 				"race": "Coyote-garou",
@@ -128,7 +128,7 @@
 		{
 			"fr":
 			{
-				"names": ["Jackson Whittemore", "Jackson", "Whittemore"],
+				"names": ["Jackson Whittemore"],
 				"imagePath": "jackson.png",
 				"gender": "Masculin",
 				"race": "Kanima",
@@ -141,7 +141,7 @@
 		{
 			"fr":
 			{
-				"names": ["Kira Yukimura", "Kira", "Yukimura"],
+				"names": ["Kira Yukimura"],
 				"imagePath": "kira.png",
 				"gender": "Feminin",
 				"race": "Kitsune",

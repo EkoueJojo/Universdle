@@ -32,7 +32,7 @@ getUniverseData(universeFileName).then
 								resultContainer.className = "SearchResult";
 		
 								let imageElement = document.createElement("img");
-								imageElement.className = "CharacterImage";
+								imageElement.className = "CharacterImageSelect";
 								imageElement.src = getCharacterImage(universeFileName, character[language].imagePath);
 		
 								let nameElement = document.createElement("p");

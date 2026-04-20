@@ -67,6 +67,13 @@ th, td
 	object-fit: cover;
 }
 
+.CharacterImageSelect
+{
+	height: 100%;
+	aspect-ratio: 2 / 1;
+	object-fit: cover;
+}
+
 .Higher
 {
 	background-image: url(../images/arrowUp.svg);

@@ -43,7 +43,7 @@
 				"names": ["Virginia Miller", "Ginny"],
 				"imagePath": "ginny.png",
 				"gender": "Femme",
-				"affiliation": ["Famille Miller", "MANG", "Lycée de Wellsbury"],
+				"affiliation": ["Famille Miller", "MANG", "Lycée de Wellsbury", "Club de Poésie"],
 				"age": 15,
 				"height": 1.55,
 				"firstSeason": "Saison 1"
@@ -249,12 +249,67 @@
 		},
 		{
 			"fr": {
-				"names": ["Matt Press"],
+				"names": ["Matthew Press", "Matt"],
 				"imagePath": "matt.png",
 				"gender": "Homme",
 				"affiliation": ["Lycée de Wellsbury"],
 				"age": 16,
 				"height": 1.95,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Padma Atlurie"],
+				"imagePath": "padma.png",
+				"gender": "Femme",
+				"affiliation": ["Lycée de Wellsbury"],
+				"age": 17,
+				"height": 1.68,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Brodie"],
+				"imagePath": "brodie.png",
+				"gender": "Homme",
+				"affiliation": ["Lycée de Wellsbury"],
+				"age": 17,
+				"height": 1.80,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Jordan"],
+				"imagePath": "jordan.png",
+				"gender": "Homme",
+				"affiliation": ["Lycée de Wellsbury", "MANG", "3SB"],
+				"age": 16,
+				"height": 1.73,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Wolfe"],
+				"imagePath": "wolfe.png",
+				"gender": "Homme",
+				"affiliation": ["Club de Poésie"],
+				"age": 17,
+				"height": 1.75,
+				"firstSeason": "Saison 3"
+			}
+		},
+		{
+			"fr": {
+				"names": ["Samantha", "Sam"],
+				"imagePath": "sam.png",
+				"gender": "Femme",
+				"affiliation": ["Lycée de Wellsbury"],
+				"age": 16,
+				"height": 1.68,
 				"firstSeason": "Saison 1"
 			}
 		}

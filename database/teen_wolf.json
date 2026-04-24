@@ -28,7 +28,8 @@
 				"Saison 5A",
 				"Saison 5B",
 				"Saison 6A",
-				"Saison 6B"
+				"Saison 6B",
+				"Film"
 			]
 		}
 	},
@@ -50,11 +51,11 @@
 		{
 			"fr":
 			{
-				"names": ["Stiles Stilinski"],
+				"names": ["Mieczyslaw Stilinski", "Stiles"],
 				"imagePath": "stiles.png",
 				"gender": "Masculin",
 				"race": "Humain",
-				"affiliation": "Meute de Scott",
+				"affiliation": ["Meute de Scott", "Lycée de Beacon Hills"],
 				"age": 16,
 				"height": 1.80,
 				"firstSeason": "Saison 1"
@@ -67,7 +68,7 @@
 				"imagePath": "lydia.png",
 				"gender": "Feminin",
 				"race": "Banshee",
-				"affiliation": "Meute de Scott",
+				"affiliation": ["Meute de Scott", "Lycée de Beacon Hills"],
 				"age": 16,
 				"height": 1.60,
 				"firstSeason": "Saison 1"
@@ -80,7 +81,7 @@
 				"imagePath": "derek.png",
 				"gender": "Masculin",
 				"race": "Loup-garou",
-				"affiliation": "Meute de Scott",
+				"affiliation": ["Meute de Scott"],
 				"age": 22,
 				"height": 1.83,
 				"firstSeason": "Saison 1"
@@ -92,8 +93,8 @@
 				"names": ["Allison Argent"],
 				"imagePath": "allison.png",
 				"gender": "Feminin",
-				"race": "Chasseuse",
-				"affiliation": "Meute de Scott",
+				"race": ["Humain"],
+				"affiliation": ["Meute de Scott", "Lycée de Beacon Hills", "Chasseurs"],
 				"age": 17,
 				"height": 1.73,
 				"firstSeason": "Saison 1"
@@ -106,7 +107,7 @@
 				"imagePath": "liam.png",
 				"gender": "Masculin",
 				"race": "Loup-garou",
-				"affiliation": "Meute de Scott",
+				"affiliation": ["Meute de Scott", "Lycée de Beacon Hills"],
 				"age": 15,
 				"height": 1.68,
 				"firstSeason": "Saison 4"
@@ -119,7 +120,7 @@
 				"imagePath": "malia.png",
 				"gender": "Feminin",
 				"race": "Coyote-garou",
-				"affiliation": "Meute de Scott",
+				"affiliation": ["Meute de Scott", "Lycée de Beacon Hills"],
 				"age": 16,
 				"height": 1.72,
 				"firstSeason": "Saison 3B"
@@ -131,8 +132,8 @@
 				"names": ["Jackson Whittemore"],
 				"imagePath": "jackson.png",
 				"gender": "Masculin",
-				"race": "Kanima",
-				"affiliation": "Aucune",
+				"race": ["Kanima", "Loup-garou"],
+				"affiliation": ["Aucune"],
 				"age": 16,
 				"height": 1.75,
 				"firstSeason": "Saison 1"
@@ -145,10 +146,257 @@
 				"imagePath": "kira.png",
 				"gender": "Feminin",
 				"race": "Kitsune",
-				"affiliation": "Meute de Scott",
+				"affiliation": ["Meute de Scott", "Lycée de Beacon Hills"],
 				"age": 16,
 				"height": 1.63,
 				"firstSeason": "Saison 3B"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Adrian Harris"],
+				"imagePath": "harris.png",
+				"gender": "Masculin",
+				"race": "Humain",
+				"affiliation": ["Lycée de Beacon Hills"],
+				"age": 50,
+				"height": 1.91,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Christopher Argent", "Argent"],
+				"imagePath": "argent.png",
+				"gender": "Masculin",
+				"race": "Humain",
+				"affiliation": ["Meute de Scott", "Chasseurs", "Famille Argent"],
+				"age": 42,
+				"height": 1.77,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Gerard Argent"],
+				"imagePath": "gerard.png",
+				"gender": "Masculin",
+				"race": ["Humain"],
+				"affiliation": ["Famille Argent", "Chasseurs", "Armée de Monroe", "Lycée de Beacon Hills"],
+				"age": 65,
+				"height": 1.83,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Kate Argent"],
+				"imagePath": "kate.png",
+				"gender": "Feminin",
+				"race": ["Humain", "Jaguar-garou"],
+				"affiliation": ["Chasseurs", "Famille Argent"],
+				"age": 27,
+				"height": 1.74,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Victoria Argent"],
+				"imagePath": "victoria.png",
+				"gender": "Feminin",
+				"race": "Humain",
+				"affiliation": ["Famille Argent"],
+				"age": 35,
+				"height": 1.75,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Julia Baccari", "Jennifer Blake"],
+				"imagePath": "jennifer.png",
+				"gender": "Feminin",
+				"race": ["Darach", "Druide"],
+				"affiliation": ["Lycée de Beacon Hills", "Meute de Kali"],
+				"age": 35,
+				"height": 1.68,
+				"firstSeason": "Saison 3A"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Vernon Boyd III", "Boyd"],
+				"imagePath": "boyd.png",
+				"gender": "Masculin",
+				"race": "Loup-garou",
+				"affiliation": ["Lycée de Beacon Hills", "Meute de Derek"],
+				"age": 16,
+				"height": 1.91,
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Braeden", "La fille"],
+				"imagePath": "braeden.png",
+				"gender": "Feminin",
+				"race": "Humain",
+				"affiliation": ["Meute de Derek", "Meute de Scott", "Mercenaire"],
+				"age": 25,
+				"height": 1.73,
+				"firstSeason": "Saison 3A"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["L. Brunski", "Brunski"],
+				"imagePath": "brunski.png",
+				"gender": "Masculin",
+				"race": "Humain",
+				"affiliation": ["Eichen House", "Le bienfaiteur"],
+				"age": 30,
+				"height": 1.80,
+				"firstSeason": "Saison 3B"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Corey Bryant"],
+				"imagePath": "corey.png",
+				"gender": "Masculin",
+				"race": "Chimère",
+				"affiliation": ["Lycée de Beacon Hills", "Meute de Scott", "Médecin de l'horreur"],
+				"age": 16,
+				"height": 1.76,
+				"firstSeason": "Saison 5A"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Araya Calavera"],
+				"imagePath": "araya.png",
+				"gender": "Feminin",
+				"race": "Humain",
+				"affiliation": ["Chasseurs", "Famille Calavera"],
+				"age": 60,
+				"height": 1.70,
+				"firstSeason": "Saison 3B"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Severo Calavera"],
+				"imagePath": "severo.png",
+				"gender": "Masculin",
+				"race": "Humain",
+				"affiliation": ["Chasseurs", "Famille Calavera"],
+				"age": 30,
+				"height": 1.80,
+				"firstSeason": "Saison 3B"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Matt Daehler"],
+				"imagePath": "matt.png",
+				"gender": "Masculin",
+				"race": "Humain",
+				"affiliation": ["Lycée de Beacon Hills", "Kanima"],
+				"age": 16,
+				"height": 1.75,
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Alan Deaton"],
+				"imagePath": "alan.png",
+				"gender": "Masculin",
+				"race": ["Humain", "Druide"],
+				"affiliation": ["Meute de Scott", "Meute de Talia"],
+				"age": 45,
+				"height": 1.74,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Deucalion"],
+				"imagePath": "deucalion.png",
+				"gender": "Masculin",
+				"race": "Loup-garou",
+				"affiliation": ["Meute de Deucalion", "Meute de Scott"],
+				"age": 50,
+				"height": 1.77,
+				"firstSeason": "Saison 3A"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Garrett Douglas"],
+				"imagePath": "garrett.png",
+				"gender": "Masculin",
+				"race": ["Loup-garou", "Cavalier Fantome"],
+				"affiliation": ["Lycée de Beacon Hills", "Chasse Sauvage"],
+				"age": 86,
+				"height": 1.85,
+				"firstSeason": "Saison 6A"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Eli Hale"],
+				"imagePath": "eli.png",
+				"gender": "Masculin",
+				"race": ["Loup-garou"],
+				"affiliation": ["Lycée de Beacon Hills", "Meute de Scott"],
+				"age": 15,
+				"height": 1.73,
+				"firstSeason": "Film"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Ennis", "Le géant"],
+				"imagePath": "ennis.png",
+				"gender": "Masculin",
+				"race": ["Loup-garou"],
+				"affiliation": ["Meute de Deucalion"],
+				"age": 32,
+				"height": 1.93,
+				"firstSeason": "Saison 3A"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Mme finch"],
+				"imagePath": "finch.png",
+				"gender": "Feminin",
+				"race": ["Loup-garou"],
+				"affiliation": ["Lycée de Beacon Hills"],
+				"age": 30,
+				"height": 1.69,
+				"firstSeason": "Saison 5"
 			}
 		}
 	]

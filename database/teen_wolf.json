@@ -81,7 +81,7 @@
 				"imagePath": "derek.png",
 				"gender": "Masculin",
 				"race": "Loup-garou",
-				"affiliation": ["Meute de Scott"],
+				"affiliation": ["Meute de Scott", "Famille Hale"],
 				"age": 22,
 				"height": 1.83,
 				"firstSeason": "Saison 1"
@@ -223,8 +223,8 @@
 				"names": ["Julia Baccari", "Jennifer Blake"],
 				"imagePath": "jennifer.png",
 				"gender": "Feminin",
-				"race": ["Darach", "Druide"],
-				"affiliation": ["Lycée de Beacon Hills", "Meute de Kali"],
+				"race": ["Darach"],
+				"affiliation": ["Lycée de Beacon Hills", "Meute de Kali", "Druide"],
 				"age": 35,
 				"height": 1.68,
 				"firstSeason": "Saison 3A"
@@ -327,8 +327,8 @@
 				"names": ["Alan Deaton"],
 				"imagePath": "alan.png",
 				"gender": "Masculin",
-				"race": ["Humain", "Druide"],
-				"affiliation": ["Meute de Scott", "Meute de Talia"],
+				"race": ["Humain"],
+				"affiliation": ["Meute de Scott", "Meute de Talia", "Druide"],
 				"age": 45,
 				"height": 1.74,
 				"firstSeason": "Saison 1"
@@ -367,7 +367,7 @@
 				"imagePath": "eli.png",
 				"gender": "Masculin",
 				"race": ["Loup-garou"],
-				"affiliation": ["Lycée de Beacon Hills", "Meute de Scott"],
+				"affiliation": ["Lycée de Beacon Hills", "Meute de Scott", "Famille Hale"],
 				"age": 15,
 				"height": 1.73,
 				"firstSeason": "Film"

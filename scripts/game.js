@@ -134,7 +134,7 @@ getUniverseData(universeFileName).then
 				}
 			});
 
-			let answer = getAnswerOfTheDay(universeData.characters, 0, true);
+			let answer = getAnswerOfTheDay(universeData.characters);
 		}
 	);
 
@@ -153,30 +153,12 @@ function getCharacterImage(universeFileName, imagePath)
 	return `../images/${universeFileName}/${imagePath}`;
 }
 
-function getAnswerOfTheDay(characters, day, relative = false, remainingCalls = 20)
+function getAnswerOfTheDay(characters, date = new Date())
 {
-	let date = relative ? new Date() : day;
-
-	if (relative)
-	{
-		date.setDate(date.getDate() + day);
-	}
-
 	let seed = getDateString(date);
 
 	rng = new Math.seedrandom(seed);
 	let randomNumber = Math.floor(rng() * characters.length);
-
-	if (remainingCalls > 0)
-	{
-		date.setDate(date.getDate() - 1);
-		let lastDayAnswer = getAnswerOfTheDay(characters, date, false, remainingCalls - 1);
-
-		while (characters[randomNumber] == lastDayAnswer)
-		{
-			randomNumber = Math.floor(rng() * characters.length);
-		}
-	}
 
 	return characters[randomNumber];
 }

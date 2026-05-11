@@ -19,5 +19,4 @@
 - [ ] Supernatural
 
 # TODO
-- Faire en sorte de pouvoir mettre des valeurs à null comme les primes quand elles sont inconnues
 - Ajouter les indices

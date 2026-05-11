@@ -63,11 +63,13 @@ getUniverseData(universeFileName).then
 							});
 
 							children[resultFocusIndex].classList.add("SelectedResult");
+							children[resultFocusIndex].scrollIntoView({ behavior: "smooth", block: "nearest" });
 
 							return;
 						}
 
 						resultsContainer.innerHTML = "";
+						let characterCount = 0;
 
 						for (let character of universeData.characters)
 						{
@@ -77,6 +79,8 @@ getUniverseData(universeFileName).then
 								{
 									if (!attemptedCharacters.includes(character[language].names[0]))
 									{
+										let characterI = characterCount;
+
 										let resultContainer = document.createElement("div");
 										resultContainer.className = "SearchResult";
 
@@ -107,6 +111,26 @@ getUniverseData(universeFileName).then
 											fieldElement.value = "";
 											resultsContainer.innerHTML = "";
 										});
+
+										resultContainer.addEventListener("mouseover", function ()
+										{
+											if (resultFocusIndex == characterI)
+											{
+												return;
+											}
+
+											resultFocusIndex = characterI;
+
+											Array.from(document.getElementsByClassName("SelectedResult")).forEach(element =>
+											{
+												element.classList.remove("SelectedResult");
+											});
+
+											resultContainer.classList.add("SelectedResult");
+											resultContainer.scrollIntoView({ behavior: "smooth", block: "nearest" });
+										});
+
+										characterCount++;
 									}
 									break;
 								}
@@ -121,6 +145,7 @@ getUniverseData(universeFileName).then
 						});
 
 						children[resultFocusIndex].classList.add("SelectedResult");
+						children[resultFocusIndex].scrollIntoView({ behavior: "smooth", block: "nearest" });
 					}
 				);
 
@@ -251,9 +276,14 @@ function guess(universeData, answer)
 		let attemptValues;
 		let answerValues;
 
-		if (typeof attemptFieldValue != "object")
+		if (attemptFieldValue === null || answerFieldValue === null)
 		{
-			if (typeof attemptFieldValue == "number")
+			attemptValues = [];
+			answerValues = answerFieldValue === null ? [] : [null];
+		}
+		else if (typeof attemptFieldValue != "object")
+		{
+			if (typeof attemptFieldValue == "number" && answerFieldValue !== null)
 			{
 				if (answerFieldValue > attemptFieldValue)
 				{

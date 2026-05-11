@@ -25,7 +25,8 @@
 			[
 				"East Blue",
 				"Alabasta",
-				"Île céleste"
+				"Skypiea",
+				"Water Seven"
 			],
 			"firstArc":
 			[
@@ -41,7 +42,11 @@
 				"Île de Drum",
 				"Alabasta",
 				"Jaya",
-				"Skypiea"
+				"Skypiea",
+				"Long Ring Long Land",
+				"Water Seven",
+				"Enies Lobby",
+				"Post-Enies Lobby"
 			]
 		},
 		"hints":
@@ -206,7 +211,7 @@
 				"origin": "North Blue",
 				"age": 48,
 				"height": 2.06,
-				"bounty": 0,
+				"bounty": null,
 				"firstSaga": "East Blue",
 				"hints":
 				{
@@ -223,7 +228,7 @@
 				"tribe": "Humain",
 				"devilsFruit": ["Paramecia"],
 				"affiliation": "Alliance Baggy et Alvida",
-				"origin": "East Blue",
+				"origin": "Grand Line",
 				"age": 37,
 				"height": 1.92,
 				"bounty": 15000000,
@@ -271,6 +276,126 @@
 				"hints":
 				{
 					"firstArc": "Village de Sirop"
+				}
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Babe", "Mr. 4", "Babe l'Attrapeur Tueur"],
+				"imagePath": "babe.png",
+				"gender": "Masculin",
+				"tribe": "Humain",
+				"devilsFruit": [],
+				"affiliation": "Baroque Works",
+				"origin": "Grand Line",
+				"age": 28,
+				"height": 2.18,
+				"bounty": 3200000,
+				"firstSaga": "Alabasta",
+				"hints":
+				{
+					"firstArc": "Alabasta"
+				}
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Bell-mère", "Belmer"],
+				"imagePath": "bellmere.png",
+				"gender": "Féminin",
+				"tribe": "Humain",
+				"devilsFruit": [],
+				"affiliation": "Aucune",
+				"origin": "East Blue",
+				"age": 30,
+				"height": 1.86,
+				"bounty": 0,
+				"firstSaga": "East Blue",
+				"hints":
+				{
+					"firstArc": "Arlong Park"
+				}
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Bellamy", "Bellamy le Hyène"],
+				"imagePath": "bellamy.png",
+				"gender": "Masculin",
+				"tribe": "Humain",
+				"devilsFruit": ["Paramecia"],
+				"affiliation": "Aucune",
+				"origin": "North Blue",
+				"age": 25,
+				"height": 2.40,
+				"bounty": 195000000,
+				"firstSaga": "Skypiea",
+				"hints":
+				{
+					"firstArc": "Jaya"
+				}
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Bentham", "Mr. 2", "Bon Clay", "Mr 2 Bon Clay", "Bentham le Sauvage"],
+				"imagePath": "bentham.png",
+				"gender": "Masculin",
+				"tribe": "Humain",
+				"devilsFruit": ["Paramecia"],
+				"affiliation": "Baroque Works",
+				"origin": "East Blue",
+				"age": 30,
+				"height": 2.38,
+				"bounty": 32000000,
+				"firstSaga": "Alabasta",
+				"hints":
+				{
+					"firstArc": "Little Garden"
+				}
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Blueno"],
+				"imagePath": "blueno.png",
+				"gender": "Masculin",
+				"tribe": "Humain",
+				"devilsFruit": ["Paramecia"],
+				"affiliation": "CP9",
+				"origin": "North Blue",
+				"age": 30,
+				"height": 2.58,
+				"bounty": 0,
+				"firstSaga": "Water Seven",
+				"hints":
+				{
+					"firstArc": "Water Seven"
+				}
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Brogy"],
+				"imagePath": "brogy.png",
+				"gender": "Masculin",
+				"tribe": "Géant",
+				"devilsFruit": [],
+				"affiliation": "Équipage des Géants",
+				"origin": "Grand Line",
+				"age": 158,
+				"height": 21.30,
+				"bounty": 100000000,
+				"firstSaga": "Alabasta",
+				"hints":
+				{
+					"firstArc": "Little Garden"
 				}
 			}
 		}

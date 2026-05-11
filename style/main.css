@@ -43,6 +43,11 @@ th, td
 	display: flex;
 }
 
+.SelectedResult
+{
+	background-color: #91aac4;
+}
+
 .SearchResult:hover
 {
 	background-color: #607080;

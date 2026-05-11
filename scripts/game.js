@@ -1,117 +1,142 @@
 const params = new URLSearchParams(window.location.search);
 let universeFileName = params.get('universe');
 let language = "fr";
-let attemptCharacter = Array();
+let attemptedCharacters = Array();
+let resultFocusIndex = 0;
 
 getUniverseData(universeFileName).then
-(
-	universeData =>
-	{
-		ShowPageContent(universeData);
-		//retrieveCharacters(universeData);
+	(
+		universeData =>
+		{
+			ShowPageContent(universeData);
+			//retrieveCharacters(universeData);
 
-		document.getElementById("GuessField").addEventListener
-		(
-			"keyup",
-			function ()
-			{
-				let fieldElement = document.getElementById("GuessField");
-				let resultsContainer = document.getElementById("SearchResults");
-				resultsContainer.innerHTML = "";
-				let indexChildren = 0;
-				let children = resultsContainer.children;
+			let fieldElement = document.getElementById("GuessField");
 
-				for (let character of universeData.characters)
-				{
-					for (let name of character[language].names)
+			fieldElement.addEventListener
+				(
+					"keyup",
+					function (e)
 					{
-						if (fieldElement.value.trim() != "" && (name.toLowerCase().startsWith(fieldElement.value) || name.toUpperCase().startsWith(fieldElement.value)))
+						let resultsContainer = document.getElementById("SearchResults");
+						let children = resultsContainer.children;
+
+						if (e.key === "ArrowUp" || e.key === "ArrowDown" || e.key === "Enter")
 						{
-							if(!attemptCharacter.includes(character[language].names[0])){
-								let resultContainer = document.createElement("div");
-								resultContainer.className = "SearchResult";
+							e.preventDefault();
 
-								let imageElement = document.createElement("img");
-								imageElement.className = "CharacterImageSelect";
-								imageElement.src = getCharacterImage(universeFileName, character[language].imagePath);
-
-								let nameElement = document.createElement("p");
-								nameElement.innerText = character[language].names[0];
-
-								let surnameElement = document.createElement("p");
-								if(character[language].names.length > 1){
-									surnameElement.innerText = "alias " + character[language].names[1];
-									surnameElement.className = "alias";
-								}
-
-								resultContainer.appendChild(imageElement);
-								resultContainer.appendChild(nameElement);
-								resultContainer.appendChild(surnameElement);
-								resultsContainer.appendChild(resultContainer);
-
-								resultContainer.addEventListener("click", function(){
-									fieldElement.value = children[indexChildren].children[1].textContent;
-									attemptCharacter.push(resultsContainer.children[indexChildren].children[1].textContent);
+							switch (e.key)
+							{
+								case "ArrowUp":
+									resultFocusIndex--;
+									break;
+								case "ArrowDown":
+									resultFocusIndex++;
+									break;
+								case "Enter":
+									fieldElement.value = children[resultFocusIndex].children[1].textContent;
+									attemptedCharacters.push(fieldElement.value.trim());
 									guess(universeData, answer[language]);
 									fieldElement.value = "";
 									resultsContainer.innerHTML = "";
-								});
+									break;
 							}
-							break;
+
+							if (children.length == 0)
+							{
+								resultFocusIndex = 0;
+								return;
+							}
+
+							if (resultFocusIndex >= 0)
+							{
+								resultFocusIndex %= children.length;
+							}
+							else
+							{
+								resultFocusIndex = children.length - 1;
+							}
+
+							Array.from(document.getElementsByClassName("SelectedResult")).forEach(element =>
+							{
+								element.classList.remove("SelectedResult");
+							});
+
+							children[resultFocusIndex].classList.add("SelectedResult");
+
+							return;
 						}
+
+						resultsContainer.innerHTML = "";
+
+						for (let character of universeData.characters)
+						{
+							for (let name of character[language].names)
+							{
+								if (fieldElement.value.trim() != "" && (name.toLowerCase().startsWith(fieldElement.value) || name.toUpperCase().startsWith(fieldElement.value)))
+								{
+									if (!attemptedCharacters.includes(character[language].names[0]))
+									{
+										let resultContainer = document.createElement("div");
+										resultContainer.className = "SearchResult";
+
+										let imageElement = document.createElement("img");
+										imageElement.className = "CharacterImageSelect";
+										imageElement.src = getCharacterImage(universeFileName, character[language].imagePath);
+
+										let nameElement = document.createElement("p");
+										nameElement.innerText = character[language].names[0];
+
+										let surnameElement = document.createElement("p");
+										if (character[language].names.length > 1)
+										{
+											surnameElement.innerText = "alias " + character[language].names[1];
+											surnameElement.className = "alias";
+										}
+
+										resultContainer.appendChild(imageElement);
+										resultContainer.appendChild(nameElement);
+										resultContainer.appendChild(surnameElement);
+										resultsContainer.appendChild(resultContainer);
+
+										resultContainer.addEventListener("click", function ()
+										{
+											fieldElement.value = children[resultFocusIndex].children[1].textContent;
+											attemptedCharacters.push(resultsContainer.children[resultFocusIndex].children[1].textContent);
+											guess(universeData, answer[language]);
+											fieldElement.value = "";
+											resultsContainer.innerHTML = "";
+										});
+									}
+									break;
+								}
+							}
+						}
+
+						resultFocusIndex = 0;
+
+						Array.from(document.getElementsByClassName("SelectedResult")).forEach(element =>
+						{
+							element.classList.remove("SelectedResult");
+						});
+
+						children[resultFocusIndex].classList.add("SelectedResult");
 					}
+				);
+
+			document.getElementById("GuessButton").addEventListener("click", function ()
+			{
+				if (!attemptedCharacters.includes(fieldElement.value.trim()))
+				{
+					attemptedCharacters.push(fieldElement.value.trim());
+					guess(universeData, answer[language]);
+					fieldElement.value = "";
 				}
-				fieldElement.addEventListener('keydown', function(e){
-					if(e.key === 'ArrowUp'){
-						e.preventDefault();
-						if(indexChildren > 0){
-							indexChildren--;
-						}
-						else{
-							indexChildren = 0;
-						}
-					} else if(e.key === 'ArrowDown'){
-						e.preventDefault();
-						if(indexChildren < resultsContainer.children.length){
-							indexChildren++;
-						}
-						else{
-							indexChildren = children.length - 1;
-						}
-					}
-					if(e.key === 'Enter'){
-						if(!attemptCharacter.includes(fieldElement.value.trim())){
-							fieldElement.value = children[indexChildren].children[1].textContent;
-							attemptCharacter.push(fieldElement.value.trim());
-							guess(universeData, answer[language]);
-							fieldElement.value = "";
-							resultsContainer.innerHTML = "";
-						}
-					}
-				});
+			});
 
-				fieldElement.addEventListener('keyup', function(e){
-					if(e.key === 'ArrowUp'){
-						children[indexChildren].style.backgroundColor = "#91aac4";
-					}
-					if(e.key === 'ArrowDown'){
-						children[indexChildren].style.backgroundColor = "#91aac4";
-					}
-				});
-
-				document.getElementById("GuessButton").addEventListener("click", function(){
-					if(!attemptCharacter.includes(fieldElement.value.trim())){
-						attemptCharacter.push(fieldElement.value.trim());
-						guess(universeData, answer[language]);
-						fieldElement.value = "";
-					}
-				});
-			}
-		);
-
-		let answer = getAnswerOfTheDay(universeData.characters, 0, true);
-	}
-);
+			let answer = getAnswerOfTheDay(universeData.characters, 0, true);
+		}
+	);
 
 async function getUniverseData(fileName)
 {
@@ -210,7 +235,7 @@ function guess(universeData, answer)
 				let victoryField = document.getElementById("Victory");
 				let div = document.createElement("h1");
 				div.id = "victory";
-				div.textContent = "🎉 Vous avez trouvé en " + attemptCharacter.length + " essai(s) ! 🎉";
+				div.textContent = "🎉 Vous avez trouvé en " + attemptedCharacters.length + " essai(s) ! 🎉";
 				victoryField.appendChild(div);
 			}
 		}

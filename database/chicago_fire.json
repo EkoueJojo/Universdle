@@ -1,0 +1,391 @@
+{
+	"metadata":
+	{
+		"universeName": "Chicago Fire",
+		"fieldNames":
+		{
+			"fr":
+			{
+				"names": "Nom",
+				"imagePath": "Photo",
+				"gender": "Genre",
+				"age": "Age",
+				"grade": "Grade",
+				"affiliation": "Affiliation",
+				"firstSeason": "Saison d'apparition"
+			}
+		},
+		"orders":
+		{
+			"firstSeason":
+			[
+				"Saison 1",
+				"Saison 2",
+				"Saison 3",
+				"Saison 4",
+				"Saison 5",
+				"Saison 6",
+				"Saison 7",
+				"Saison 8",
+				"Saison 9",
+				"Saison 10",
+				"Saison 11",
+				"Saison 12",
+				"Saison 13",
+				"Saison 14",
+				"Saison 15"
+			]
+		}
+	},
+	"characters":
+	[
+		{
+			"fr":
+			{
+				"names": ["Kelly Severide"],
+				"imagePath": "kelly.png",
+				"gender": "Masculin",
+				"age": 45,
+				"grade": "Lieutenant",
+				"affiliation": ["Squad 3/51", "OFI"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Matt Casey"],
+				"imagePath": "matt.png",
+				"gender": "Masculin",
+				"age": 47,
+				"grade": ["Capitaine"],
+				"affiliation": ["Truck 81/51"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Christopher Herrmann"],
+				"imagePath": "christopher.png",
+				"gender": "Masculin",
+				"age": 50,
+				"grade": ["Pompier"],
+				"affiliation": ["Truck 81/51", "Engine 51/51"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Joe Cruz"],
+				"imagePath": "joe.png",
+				"gender": "Masculin",
+				"age": 40,
+				"grade": ["Pompier"],
+				"affiliation": ["Truck 81/51", "Squad 3/51"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Brian Zvonecek", "Otis"],
+				"imagePath": "otis.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Pompier"],
+				"affiliation": ["Truck 81/51"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Randall McHolland", "Mouch"],
+				"imagePath": "mouch.png",
+				"gender": "Masculin",
+				"age": 50,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Truck 81/51", "Engine 51/51"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Wallace Boden", "Chef"],
+				"imagePath": "boden.png",
+				"gender": "Masculin",
+				"age": 63,
+				"grade": ["Commissaire adjoint"],
+				"affiliation": ["Bataillon 25", "District 4", "Firehouse 51"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Leslie Shay"],
+				"imagePath": "shay.png",
+				"gender": "Feminin",
+				"age": 36,
+				"grade": ["Ambulanciere"],
+				"affiliation": ["Ambulance 61/51"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Gabby Dawson"],
+				"imagePath": "dawson.png",
+				"gender": "Feminin",
+				"age": 35,
+				"grade": ["Ambulanciere", "Pompier"],
+				"affiliation": ["Ambulance 61/51", "Truck 81/51"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Stella Kidd"],
+				"imagePath": "kidd.png",
+				"gender": "Feminin",
+				"age": 30,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Truck 81/51", "Girls on Fire"],
+				"firstSeason": "Saison 4"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Violet Mikami"],
+				"imagePath": "violet.png",
+				"gender": "Feminin",
+				"age": 29,
+				"grade": ["Ambulanciere"],
+				"affiliation": ["Ambulance 61/51"],
+				"firstSeason": "Saison 8"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Tony Ferraris"],
+				"imagePath": "tony.png",
+				"gender": "Masculin",
+				"age": 40,
+				"grade": ["Pompier"],
+				"affiliation": ["Squad 3/51"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Harold Capp"],
+				"imagePath": "capp.png",
+				"gender": "Masculin",
+				"age": 40,
+				"grade": ["Pompier"],
+				"affiliation": ["Squad 3/51"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Sal Vasquez"],
+				"imagePath": "vasquez.png",
+				"gender": "Masculin",
+				"age": 30,
+				"grade": ["Pompier"],
+				"affiliation": ["Truck 81/51"],
+				"firstSeason": "Saison 14"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Lyla Novak", "Lizzie"],
+				"imagePath": "novak.png",
+				"gender": "Feminin",
+				"age": 30,
+				"grade": ["Ambulanciere"],
+				"affiliation": ["Ambulance 61/51"],
+				"firstSeason": "Saison 12"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Dom Pascal", "Chef"],
+				"imagePath": "pascal.png",
+				"gender": "Masculin",
+				"age": 50,
+				"grade": ["Battaillon Chief"],
+				"affiliation": ["Bataillon 25", "Firehouse 51"],
+				"firstSeason": "Saison 13"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Evan Hawkins"],
+				"imagePath": "hawkins.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Paramedic Field Chief"],
+				"affiliation": ["Ambulance 61/51", "EMS District 6"],
+				"firstSeason": "Saison 10"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Jason Pelham"],
+				"imagePath": "pelham.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Truck 81/51"],
+				"firstSeason": "Saison 10"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Sylvie Brett"],
+				"imagePath": "brett.png",
+				"gender": "Feminin",
+				"age": 30,
+				"grade": ["Ambulanciere"],
+				"affiliation": ["Ambulance 61/51"],
+				"firstSeason": "Saison 3"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Blake Gallo"],
+				"imagePath": "gallo.png",
+				"gender": "Masculin",
+				"age": 25,
+				"grade": ["Pompier"],
+				"affiliation": ["Truck 81/51"],
+				"firstSeason": "Saison 8"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Derrick Gibson"],
+				"imagePath": "gibson.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Pompier"],
+				"affiliation": ["Truck 81/51"],
+				"firstSeason": "Saison 12"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Jack Damon"],
+				"imagePath": "damon.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Pompier"],
+				"affiliation": ["Truck 81/51"],
+				"firstSeason": "Saison 12"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Jimmy Borelli"],
+				"imagePath": "borelli.png",
+				"gender": "Masculin",
+				"age": 30,
+				"grade": ["Pompier", "Ambulancier"],
+				"affiliation": ["Truck 81/51", "Ambulance 61/51"],
+				"firstSeason": "Saison 4"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Darren Ritter"],
+				"imagePath": "ritter.png",
+				"gender": "Masculin",
+				"age": 30,
+				"grade": ["Pompier"],
+				"affiliation": ["Truck 81/51", "Engine 51/51"],
+				"firstSeason": "Saison 7"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Sam Carver"],
+				"imagePath": "carver.png",
+				"gender": "Masculin",
+				"age": 30,
+				"grade": ["Pompier"],
+				"affiliation": ["Truck 81/51"],
+				"firstSeason": "Saison 11"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Kylie Estevez"],
+				"imagePath": "kylie.png",
+				"gender": "Feminin",
+				"age": 25,
+				"grade": ["Pompier", "Secretaire"],
+				"affiliation": ["Truck 81/51", "Engine 51/51", "Girls on Fire", "Firehouse 51"],
+				"firstSeason": "Saison 8"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Jeff Clarke"],
+				"imagePath": "clarke.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Squad 3/51"],
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Peter Mills"],
+				"imagePath": "mills.png",
+				"gender": "Masculin",
+				"age": 25,
+				"grade": ["Pompier", "Ambulancier"],
+				"affiliation": ["Truck 81/51", "Ambulance 61/51"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Emily Foster"],
+				"imagePath": "foster.png",
+				"gender": "Feminin",
+				"age": 30,
+				"grade": ["Ambulanciere"],
+				"affiliation": ["Ambulance 61/51"],
+				"firstSeason": "Saison 7"
+			}
+		}
+	]
+}

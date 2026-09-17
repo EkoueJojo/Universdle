@@ -398,6 +398,32 @@
 				"height": 1.69,
 				"firstSeason": "Saison 5"
 			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Bobby Finstock", "Coach"],
+				"imagePath": "coach.png",
+				"gender": "Masculin",
+				"race": ["Humain"],
+				"affiliation": ["Lycée de Beacon Hills"],
+				"age": 40,
+				"height": 1.80,
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Mme finch"],
+				"imagePath": "finch.png",
+				"gender": "Feminin",
+				"race": ["Loup-garou"],
+				"affiliation": ["Lycée de Beacon Hills"],
+				"age": 30,
+				"height": 1.69,
+				"firstSeason": "Saison 5"
+			}
 		}
 	]
 }

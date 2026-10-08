@@ -1,7 +1,7 @@
 {
 	"metadata":
 	{
-		"universeName": "Chicago Fire",
+		"universeName": "One Chicago",
 		"fieldNames":
 		{
 			"fr":
@@ -385,6 +385,270 @@
 				"grade": ["Ambulanciere"],
 				"affiliation": ["Ambulance 61/51"],
 				"firstSeason": "Saison 7"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Jay Halstead"],
+				"imagePath": "halstead.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Renseignements"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Kevin Atwater"],
+				"imagePath": "atwater.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Renseignements"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Adam Ruzek"],
+				"imagePath": "ruzek.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Renseignements"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Hank Voight"],
+				"imagePath": "voight.png",
+				"gender": "Masculin",
+				"age": 45,
+				"grade": ["Sergent"],
+				"affiliation": ["Renseignements"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Trudy Platt"],
+				"imagePath": "platt.png",
+				"gender": "Feminin",
+				"age": 45,
+				"grade": ["Sergent"],
+				"affiliation": ["21e district"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Kim Burgess"],
+				"imagePath": "burgess.png",
+				"gender": "Feminin",
+				"age": 30,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Patrouille", "Renseignements"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Erin Lindsay"],
+				"imagePath": "lindsay.png",
+				"gender": "Feminin",
+				"age": 35,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Renseignements", "FBI"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Sean Roman"],
+				"imagePath": "roman.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Officier"],
+				"affiliation": ["Patrouille"],
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Alvin Olinksy"],
+				"imagePath": "olinsky.png",
+				"gender": "Masculin",
+				"age": 45,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Renseignements"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Antonio Dawson"],
+				"imagePath": "antonio.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Renseignements"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Dante Torres"],
+				"imagePath": "torres.png",
+				"gender": "Masculin",
+				"age": 30,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Renseignements"],
+				"firstSeason": "Saison 9"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Eva Imani"],
+				"imagePath": "imani.png",
+				"gender": "Feminin",
+				"age": 30,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Renseignements"],
+				"firstSeason": "Saison 13"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Vannessa Rojas"],
+				"imagePath": "rojas.png",
+				"gender": "Feminin",
+				"age": 30,
+				"grade": ["Lieutenant"],
+				"affiliation": ["Renseignements"],
+				"firstSeason": "Saison 7"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Sheldon Jin"],
+				"imagePath": "jin.png",
+				"gender": "Masculin",
+				"age": 30,
+				"grade": ["Technicien"],
+				"affiliation": ["Renseignements"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Will Halstead"],
+				"imagePath": "will.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Urgentiste"],
+				"affiliation": ["Medical Center"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Nathalie Manning"],
+				"imagePath": "Manning.png",
+				"gender": "Feminin",
+				"age": 35,
+				"grade": ["Pédiatre urgentiste"],
+				"affiliation": ["Medical Center"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["April Sexton"],
+				"imagePath": "sexton.png",
+				"gender": "Feminin",
+				"age": 30,
+				"grade": ["Infirmière"],
+				"affiliation": ["Medical Center"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Connor Rhodes"],
+				"imagePath": "rhodes.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Chirurgien"],
+				"affiliation": ["Medical Center"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Ethan Choi"],
+				"imagePath": "choi.png",
+				"gender": "Masculin",
+				"age": 35,
+				"grade": ["Urgentiste"],
+				"affiliation": ["Medical Center"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Daniel Charles"],
+				"imagePath": "charles.png",
+				"gender": "Masculin",
+				"age": 60,
+				"grade": ["Psychiatre"],
+				"affiliation": ["Medical Center"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Crockett Marcel"],
+				"imagePath": "marcel.png",
+				"gender": "Masculin",
+				"age": 40,
+				"grade": ["Resident en médecine"],
+				"affiliation": ["Medical Center"],
+				"firstSeason": "Saison 5"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Maggie Lockwood"],
+				"imagePath": "maggie.png",
+				"gender": "Feminin",
+				"age": 40,
+				"grade": ["Infirmière"],
+				"affiliation": ["Medical Center"],
+				"firstSeason": "Saison 1"
 			}
 		}
 	]

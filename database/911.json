@@ -1,0 +1,619 @@
+{
+	"metadata":
+	{
+		"universeName": "9-1-1",
+		"fieldNames":
+		{
+			"fr":
+			{
+				"names": "Nom",
+				"imagePath": "Photo",
+				"gender": "Genre",
+				"age": "Age",
+				"metier": "Métier",
+				"affiliation": "Affiliation",
+				"firstSeason": "Saison d'apparition"
+			}
+		},
+		"orders":
+		{
+			"firstSeason":
+			[
+				"Saison 1",
+				"Saison 2",
+				"Saison 3",
+				"Saison 4",
+				"Saison 5",
+				"Saison 6",
+				"Saison 7",
+				"Saison 8",
+				"Saison 9",
+				"Saison 10",
+				"Saison 11",
+				"Saison 12",
+				"Saison 13",
+				"Saison 14",
+				"Saison 15"
+			]
+		}
+	},
+	"characters":
+	[
+		{
+			"fr":
+			{
+				"names": ["Bobby Nash", "Cap"],
+				"imagePath": "bobby.png",
+				"gender": "Masculin",
+				"age": 50,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 118"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Athena Grant"],
+				"imagePath": "athena.png",
+				"gender": "Feminin",
+				"age": 45,
+				"metier": "Policière",
+				"affiliation": ["LAPD"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Michael Grant"],
+				"imagePath": "michael.png",
+				"gender": "Masculin",
+				"age": 45,
+				"metier": "Architecte",
+				"affiliation": ["Civil"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["May Grant"],
+				"imagePath": "may.png",
+				"gender": "Feminin",
+				"age": 25,
+				"metier": "Infirmière",
+				"affiliation": ["Dispatch 911 LA", "Civil"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Harry Grant"],
+				"imagePath": "harry.png",
+				"gender": "Masculin",
+				"age": 30,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 118"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Evan Buckley", "Buck"],
+				"imagePath": "buck.png",
+				"gender": "Masculin",
+				"age": 35,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 118"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Maddie Buckley Han"],
+				"imagePath": "maddie.png",
+				"gender": "Feminin",
+				"age": 40,
+				"metier": "Opératrice 911",
+				"affiliation": ["Dispatch 911 LA"],
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Edmundo Diaz", "Eddie"],
+				"imagePath": "eddie.png",
+				"gender": "Masculin",
+				"age": 35,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 118"],
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Howard Han", "Chimney"],
+				"imagePath": "chminey.png",
+				"gender": "Masculin",
+				"age": 40,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 118"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Henrietta Wilson", "Hen"],
+				"imagePath": "hen.png",
+				"gender": "Feminin",
+				"age": 40,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 118"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Karen Wilson"],
+				"imagePath": "athena.png",
+				"gender": "Feminin",
+				"age": 45,
+				"metier": "Ingénieure",
+				"affiliation": ["Civil"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Ravi Panikkar"],
+				"imagePath": "ravi.png",
+				"gender": "Masculin",
+				"age": 30,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 118"],
+				"firstSeason": "Saison 4"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Christopher Diaz", "Chris"],
+				"imagePath": "chris.png",
+				"gender": "Masculin",
+				"age": 16,
+				"metier": "Aucun",
+				"affiliation": ["Civil"],
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Jee-Yun Han", "Jee"],
+				"imagePath": "jee.png",
+				"gender": "Feminin",
+				"age": 5,
+				"metier": "Aucun",
+				"affiliation": ["Civil"],
+				"firstSeason": "Saison 4"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Denny Wilson"],
+				"imagePath": "denny.png",
+				"gender": "Masculin",
+				"age": 16,
+				"metier": "Aucun",
+				"affiliation": ["Civil"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Mara Wilson"],
+				"imagePath": "mara.png",
+				"gender": "Feminin",
+				"age": 9,
+				"metier": "Aucun",
+				"affiliation": ["Civil"],
+				"firstSeason": "Saison 7"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Tommy Kinard"],
+				"imagePath": "tommy.png",
+				"gender": "Masculin",
+				"age": 40,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 118"],
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Abby Clark"],
+				"imagePath": "abby.png",
+				"gender": "Feminin",
+				"age": 35,
+				"metier": "Opératrice 911",
+				"affiliation": ["Dispatch 911 LA"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Carla Price"],
+				"imagePath": "carla.png",
+				"gender": "Feminin",
+				"age": 45,
+				"metier": "Infirmière à domicile",
+				"affiliation": ["Civil"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Elaine Maynard"],
+				"imagePath": "elaine.png",
+				"gender": "Feminin",
+				"age": 40,
+				"metier": "Policière",
+				"affiliation": ["LAPD"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Vincent Gerrard"],
+				"imagePath": "gerrard.png",
+				"gender": "Masculin",
+				"age": 50,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 118"],
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Owen Strand"],
+				"imagePath": "owen.png",
+				"gender": "Masculin",
+				"age": 40,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 126"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["TK Strand"],
+				"imagePath": "tk.png",
+				"gender": "Masculin",
+				"age": 30,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 126"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Carlos Reyes"],
+				"imagePath": "carlos.png",
+				"gender": "Masculin",
+				"age": 35,
+				"metier": "Ranger",
+				"affiliation": ["Austin PD", "Texas Ranger"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Juddson Ryder", "Judd"],
+				"imagePath": "judd.png",
+				"gender": "Masculin",
+				"age": 40,
+				"metier": "Pompier",
+				"affiliation": ["LAPD"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Grace Ryder"],
+				"imagePath": "grace.png",
+				"gender": "Feminin",
+				"age": 35,
+				"metier": "Opératrice 911",
+				"affiliation": ["Dispatch 911 Austin"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Mateo Chavez"],
+				"imagePath": "mateo.png",
+				"gender": "Masculin",
+				"age": 30,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 126"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Paul Strickland"],
+				"imagePath": "paul.png",
+				"gender": "Masculin",
+				"age": 35,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 126"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Marjan Marwani"],
+				"imagePath": "marjan.png",
+				"gender": "Feminin",
+				"age": 30,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 126"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Tommy Vega"],
+				"imagePath": "vega.png",
+				"gender": "Feminin",
+				"age": 40,
+				"metier": "Paramedics",
+				"affiliation": ["Caserne 126"],
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Nancy Gillian"],
+				"imagePath": "nancy.png",
+				"gender": "Feminin",
+				"age": 30,
+				"metier": "Paramedics",
+				"affiliation": ["Caserne 126"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Josh Russo"],
+				"imagePath": "josh.png",
+				"gender": "Masculin",
+				"age": 40,
+				"metier": "Opérateur 911",
+				"affiliation": ["Dispatch 911 LA"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Sue Belvins"],
+				"imagePath": "sue.png",
+				"gender": "Feminin",
+				"age": 50,
+				"metier": "Opératrice 911",
+				"affiliation": ["Dispatch 911 LA"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Michelle Blake"],
+				"imagePath": "michelle.png",
+				"gender": "Feminin",
+				"age": 35,
+				"metier": "Paramedics",
+				"affiliation": ["Caserne 126"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Charles Vega"],
+				"imagePath": "charles.png",
+				"gender": "Masculin",
+				"age": 40,
+				"metier": "Restaurateur",
+				"affiliation": ["Civil"],
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Isabella Vega"],
+				"imagePath": "isabella.png",
+				"gender": "Feminin",
+				"age": 13,
+				"metier": "Aucun",
+				"affiliation": ["Civil"],
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Evie Vega"],
+				"imagePath": "evie.png",
+				"gender": "Feminin",
+				"age": 13,
+				"metier": "Aucun",
+				"affiliation": ["Civil"],
+				"firstSeason": "Saison 2"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Charlie Ryder"],
+				"imagePath": "charlie.png",
+				"gender": "Feminin",
+				"age": 3,
+				"metier": "Aucun",
+				"affiliation": ["Civil"],
+				"firstSeason": "Saison 3"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Donald Hart", "Don"],
+				"imagePath": "don.png",
+				"gender": "Masculin",
+				"age": 40,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 113"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Ryan Hart"],
+				"imagePath": "ryan.png",
+				"gender": "Masculin",
+				"age": 30,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 113"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Blythe Hart"],
+				"imagePath": "blythe.png",
+				"gender": "Feminin",
+				"age": 40,
+				"metier": "Entrepeneur",
+				"affiliation": ["Civil"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Blue Benning"],
+				"imagePath": "blue.png",
+				"gender": "Masculin",
+				"age": 30,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 113"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Dixie Bennings"],
+				"imagePath": "dixie.png",
+				"gender": "Feminin",
+				"age": 40,
+				"metier": "Chanteuse",
+				"affiliation": ["Civil"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Taylor Thompson"],
+				"imagePath": "taylor.png",
+				"gender": "Feminin",
+				"age": 30,
+				"metier": "Pompier",
+				"affiliation": ["Caserne 113"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Roxie Alba"],
+				"imagePath": "roxie.png",
+				"gender": "Feminin",
+				"age": 30,
+				"metier": "Chirurgienne",
+				"affiliation": ["Caserne 113"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Cammie Raleigh"],
+				"imagePath": "cammie.png",
+				"gender": "Feminin",
+				"age": 40,
+				"metier": "Opératrice 911",
+				"affiliation": ["Dispatch 911 Nashville"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Samantha Hart", "Sam"],
+				"imagePath": "sam.png",
+				"gender": "Feminin",
+				"age": 30,
+				"metier": "Urgentiste",
+				"affiliation": ["Village West Hospital"],
+				"firstSeason": "Saison 1"
+			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Nick Turner"],
+				"imagePath": "nick.png",
+				"gender": "Masculin",
+				"age": 45,
+				"metier": "Agent FBI",
+				"affiliation": ["Dispatch 911 Nashville", "FBI"],
+				"firstSeason": "Saison 1"
+			}
+		}
+	]
+}

@@ -2,7 +2,7 @@
 - [ ] Harry Potter
 - [ ] Stranger Things
 - [ ] Fast and Furious
-- [ ] 9-1-1 (Franchise)
+- [x] 9-1-1 (Franchise)
 - [ ] Outer Banks
 - [ ] The rookie
 - [ ] Friends
@@ -12,7 +12,7 @@
 - [ ] Hawaii 5-0
 - [ ] Disney
 - [ ] DND (campagne de jojo)
-- [ ] Chicago Fire et PD
+- [x] Chicago Fire et PD
 
 ### Futures univers à mettre (à finir avant)
 - [ ] MHA (+ vigilante)

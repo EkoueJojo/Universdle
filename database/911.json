@@ -614,6 +614,18 @@
 				"affiliation": ["Dispatch 911 Nashville", "FBI"],
 				"firstSeason": "Saison 1"
 			}
+		},
+		{
+			"fr":
+			{
+				"names": ["Wyatt Harris"],
+				"imagePath": "wyatt.png",
+				"gender": "Masculin",
+				"age": 30,
+				"metier": "Opérateur 911",
+				"affiliation": ["Dispatch 911 Austin"],
+				"firstSeason": "Saison 3"
+			}
 		}
 	]
 }
